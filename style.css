@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(Home.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 3em;
+
+}
+.header{
+    height:10vh;
+    width: 100%;
+    border: 5px solid #9f6335;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #9f6335;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 25px;
+    font-weight: bolder;
+}
+li a{
+    color: white;
+    text-decoration: none;
+        text-decoration: none;
+        font-size: 13pt;
+}
+#u {
+    color: #ffffff;
+    transition: .5s;
+    position: fixed;
+    top: 20px;  
+    left: 50px; 
+}
+
+#u:hover {
+    color: #e8ff32;
+    font-size: 15pt;
+}
+
+#t {
+    color: #ffffff;
+    transition: .5s;
+    position: fixed;
+    top: 20px; 
+    left: 150px;  
+    display: flex;
+    justify-content: space-around;
+}
+
+#t:hover {
+    color: #e8ff32;
+    font-size: 15pt;
+}
+
+#q {
+    color: #ffffff;
+    transition: .5s;
+    position: fixed;
+    top: 20px;  
+    left: 300px;  
+    display: flex;
+    justify-content: space-around;
+}
+
+#q:hover {
+    color: #e8ff32;
+    font-size: 15pt;
+}
+.well{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80VH;
+}
+.well h3{
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  color: black;
+  font-weight: bolder;
+  font-size: 30pt;
+  position: fixed;
+  margin-bottom: 3cm;
+}
+
+.submit{
+    display: inline-block;
+    padding: 15px;
+    background-color: #9f6335;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: .5s;
+}
+.submit:hover{
+    background-color: #782600;
+}
+.button{
+    display: inline-block;
+    font-size: 15pt;
+    font-weight: bolder;
+    padding: 15px;
+    background-color: #e8ff32 ;
+    border-radius: 50px;
+    border: 3px solid #782600;
+    transition: .5s;
+}
+.button:hover{
+    background-color: #782600;
+    color: ivory;
+    padding: 20px;
+}
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+.input,select{
+    width: 100%;
+    padding: 12px;
+    background: rgb(250, 248, 248);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.input:hover{
+    border-color: blue;
+    background-color: rgba(0, 0, 255, 0.253);
+    backdrop-filter: blur(10px);
+}
+
+p{
+    font-weight: bolder;
+    color: grey;
+    font-size: 12pt;
+    text-align: center;
+    margin-bottom: 10px;
+}
+p a{
+    color: #782600;
+    text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
+}
+.error-message{
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.form label {
+    display: block; 
+    margin-bottom: 10px;
+}
+
+#firstname, #lastname, #email, #password, #confirmPassword {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #45a049;
+}
+
+.logIn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
