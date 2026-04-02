@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo json_encode(['status' => 'error', 'message' => 'Email and password are required']);
         exit;
     }
-
+aa
     $login_email = filter_var($_POST['idLogin'], FILTER_SANITIZE_EMAIL);
     $login_password = htmlspecialchars($_POST['idPassword'], ENT_QUOTES, 'UTF-8');
 
